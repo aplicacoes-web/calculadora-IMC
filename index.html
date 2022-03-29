@@ -33,20 +33,21 @@
 
   <section class="section" id="section-form">
     <div class="container container-box">
-      <form action="/" id="form">
-        <label for="weight">Peso:</label>
-        <input type="text" name="weight" id="weight">
+      <form action="/" id="formulario">
+        <label for="peso">Peso:</label>
+        <input type="text" name="peso" id="peso" placeholder="Ex.: 68">
+        <span id="span2"></span>
 
-        <label for="height">Altura:</label>
-        <input type="text" name="height" id="height">
+        <label for="altura">Altura:</label>
+        <input type="text" name="altura" id="altura" placeholder="Ex.: 1.70">
+        <span id="span2"></span>
 
-        <input type="button" value="Calcular" class="button" id="button">
+        <input type="submit" value="Calcular" class="button" id="button">
+
+        <div id="imc-resultado"></div>
       </form>
     </div>
-
-    <div class="imc-result" id="imc-result"></div>
-  </section>
-
+  </section>  
 
   <script src="./assets/javascript/main.js"></script>
 </body>

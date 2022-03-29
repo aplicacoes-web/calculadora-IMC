@@ -4,7 +4,7 @@ html, body {
 }
 
 body {
-  background-color: #277DA1;
+  background-color: #f94144a2;
 }
 
 .container {
@@ -21,29 +21,56 @@ body {
 
 
 header {
-  padding: 2rem 0;
+  padding: 1rem 0;
 }
 
 nav {
-  background-color: #F8961E;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 1rem;
 }
 
 .logo {
-  width: 50%;
+  width: 40%;
 }
 
 ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  
+}
+
+ul li {
+  border: 1px solid #000000;
+  border-radius: 0.2rem;
+  padding: 0.4rem;
+  background-color: #ffffff;
+  box-shadow: 2px 2px 3px #000000;
+  width: 90%;
+  text-align: center;
+}
+
+ul li:hover {
+  transform: scale(0.9);
+  background-color: #90BE6D;
+  font-weight: 700;
+}
+
+ul li:active {
+  transform: scale(1.1);
+  background-color: #90BE6D;
 }
 
 ul li a {
   color: #000000;
   text-decoration: none;
-  border: 1px solid #000000;
-  padding: 0.2rem;
-  background-color: #ffffff;
 }
+
+
 
 section {
   background-color: aquamarine;
@@ -95,9 +122,29 @@ input.button {
 } 
 
 input.button:hover {
+  transition: all 0.3s;
   background-color: #F9844A;
 }
 
 input.button:active {
   background-color: #F8961E;
+  transform: scale(0.9);
+}
+
+.imc-resultado {
+  margin: 1.5rem 0;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.resultado-verde {
+  background-color: #90BE6D;
+  box-shadow: 3px 3px 3px #397e04;
+  border-radius: 0.3rem;
+}
+
+.resultado-vermelho {
+  background-color: #F94144;
+  box-shadow: 3px 3px 3px #6d0304;
+  border-radius: 0.3rem;
 }
