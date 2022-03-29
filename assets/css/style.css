@@ -1,0 +1,103 @@
+html, body {
+  font-size: 1rem;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #277DA1;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+
+    border: 1px solid black;
+}
+
+.container-box {
+  display: flex;
+  justify-content: center;
+}
+
+
+header {
+  padding: 2rem 0;
+}
+
+nav {
+  background-color: #F8961E;
+}
+
+.logo {
+  width: 50%;
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+ul li a {
+  color: #000000;
+  text-decoration: none;
+  border: 1px solid #000000;
+  padding: 0.2rem;
+  background-color: #ffffff;
+}
+
+section {
+  background-color: aquamarine;
+  margin-bottom: 100px;
+}
+
+h1.title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+form {
+  width: 100%;
+  height: auto;
+  padding: 1.2rem;
+  margin: 3rem 0;
+  border-radius: 0.8rem;
+  background-color: #ffffff;
+  box-shadow: 5px 5px 5px #000000;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+label {
+  font-weight: 700;
+}
+
+input {
+  margin: 0.5rem 0 1.2rem;
+  width: 100%;
+  border: 2px groove #F8961E;
+  border-radius: 0.3rem;
+  outline-color: #F3722C;
+  padding: 0.5rem 0;
+}
+
+input.button {
+  border: none;
+  width: 100%;
+  padding: 0.5rem 0;
+  margin-bottom: 0;
+  background-color: #F3722C; 
+  color: #ffffff;
+  font-weight: 700;
+  cursor: pointer;
+} 
+
+input.button:hover {
+  background-color: #F9844A;
+}
+
+input.button:active {
+  background-color: #F8961E;
+}
