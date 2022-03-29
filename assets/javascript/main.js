@@ -20,14 +20,21 @@ function calculoDoImc () {
 
     // 3º passo - Validações dos campos
     /* criar uma condicional de validação, caso o usuário não coloque valores nos inputs */
+    inputPeso.style.border = 'none';
+    inputAltura.style.border = 'none';
+
     if(inputPeso.value === '' && inputAltura.value === '') {
       alert('Digite seu peso e altura para continuarmos.');
+      inputPeso.style.border = '2px solid red';
+      inputAltura.style.border = '2px solid red';
       return;
     } else if(inputPeso.value === '') {
       alert('Digite o seu peso para continuarmos.'); 
+      inputPeso.style.border = '2px solid red';
       return;
     } else if(inputAltura.value === '') {
       alert('Digite a sua altura para continuarmos.');
+      inputAltura.style.border = '2px solid red';
       return;
     }
 
@@ -91,4 +98,3 @@ function calculoDoImc () {
       resultado.appendChild(p);      
   }
 }
-calculoDoImc();
